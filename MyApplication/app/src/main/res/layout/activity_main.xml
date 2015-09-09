@@ -1,0 +1,66 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+    <LinearLayout android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/header_height"
+        android:background="#ff0000"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/gallery"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/header_image_height"/>
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/normal_margin_x2"
+            android:layout_marginLeft="@dimen/normal_margin_x2"
+            android:layout_marginRight="@dimen/normal_margin_x2"
+            android:textSize="24sp"/>
+
+        <TextView
+            android:id="@+id/type"
+            android:layout_below="@id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/normal_margin_x2"
+            android:layout_marginLeft="@dimen/normal_margin_x2"
+            android:layout_marginRight="@dimen/normal_margin_x2"
+            android:textSize="12sp"
+            android:lines="1"
+            android:text="Кинотеатр"/>
+
+        <TextView
+            android:id="@+id/motto"
+            android:layout_below="@id/type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/normal_margin_x2"
+            android:layout_marginLeft="@dimen/normal_margin_x2"
+            android:layout_marginRight="@dimen/normal_margin_x2"
+            android:textSize="14sp"
+            android:lines="2"/>
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tab_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/tab_height"
+            style="@style/PlaceTabLayout"
+            app:tabMode="fixed"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>
